@@ -11,12 +11,14 @@ public class LoginPageActions extends GetPage {
     }
 
     public void skippresentation(){
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        element("skip").click();
+        element("skipbutton").click();
+    }
+
+    public void enterLoginCredentials(){
+        element("digispace").sendKeys("Freeuse");
+        element("email").sendKeys("freeuser251093@gmail.com");
+        element("password").sendKeys("Gaurav@123");
+        element("loginbutton").click();
     }
 
 

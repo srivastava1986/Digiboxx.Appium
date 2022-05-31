@@ -1,1 +1,14 @@
-skip:id:id/btnSkipIntroSlideOne
+#elementname;ocator;value
+################################################
+skipbutton;id;com.liqvd.digibox.test:id/btnSkipIntroSlideOne
+digispace;id;com.liqvd.digibox.test:id/edtDigiSpaceName
+email;id;com.liqvd.digibox.test:id/edtEmail
+password;id;com.liqvd.digibox.test:id/edtPassword
+loginbutton;id;com.liqvd.digibox.test:id/btnSignIn
+#################################################
+#MYBOXXPAGE
+addbutton;xpath;//android.widget.FrameLayout[@content-desc="Add"]/android.widget.FrameLayout/android.widget.ImageView
+uploadfilebutton;id;com.liqvd.digibox.test:id/llUploadFileFolders
+selectimagefile;xpath;//*[@text='StatueofLiberty.jpg']
+kebab;xpath;/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.widget.ImageButton
+recycle;id;com.liqvd.digibox.test:id/llRecycleBin
