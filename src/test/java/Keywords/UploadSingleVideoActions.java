@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
     public class UploadSingleVideoActions extends GetPage {
         public UploadSingleVideoActions(AndroidDriver driver) {
             super(driver, "UploadSingleVideoTest");
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         }
 
         public void upload_single_video_file() {

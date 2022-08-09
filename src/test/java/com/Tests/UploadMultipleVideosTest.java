@@ -29,6 +29,6 @@ public class UploadMultipleVideosTest {
 
     @Test(dependsOnMethods = "step03_enter_your_credentials")
     public void step04_uploadingMultipleVideos() {
-        test.uploadMultipleVideos.upload_multiple_videos_file();
+        test.multiplevideos.upload_multiple_videos_file();
     }
 }

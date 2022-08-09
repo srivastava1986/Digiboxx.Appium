@@ -4,12 +4,13 @@ import com.TestSessionInitiator.TestSessionInitiator;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class UploadSingleVideoTest {
+public class UploadSingleVideoTest extends AExtentReportReporter {
     TestSessionInitiator test;
 
     @BeforeClass
     public void startsession(){
         test=new TestSessionInitiator();
+        extenttest=extent.createTest("Upload Single video Test Case");
     }
 
     @Test

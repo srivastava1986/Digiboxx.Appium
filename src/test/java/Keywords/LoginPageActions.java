@@ -9,7 +9,7 @@ public class LoginPageActions extends GetPage {
 
     public LoginPageActions(AndroidDriver driver){
         super(driver,"LoginPageTest");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     public void skippresentation(){
@@ -24,6 +24,6 @@ public class LoginPageActions extends GetPage {
         element("digispace").sendKeys("Freeuse");
         element("email").sendKeys("freeuser251093@gmail.com");
         element("password").sendKeys("Gaurav@123");
-        element("loginbutton").click();
+        element("signinbutton").click();
     }
 }

@@ -1,4 +1,4 @@
-#elementname;locator;value
+#elementname;locatortype;value
 ################################################
 skipbutton;id;com.liqvd.digibox.test:id/btnSkipIntroSlideOne
 continue;id;com.liqvd.digibox.test:id/tvContinueToNext
@@ -6,6 +6,7 @@ digispace;id;com.liqvd.digibox.test:id/edtDigiSpaceName
 email;id;com.liqvd.digibox.test:id/edtEmail
 password;id;com.liqvd.digibox.test:id/edtPassword
 loginbutton;id;com.liqvd.digibox.test:id/btnSignIn
+signinbutton;id;com.liqvd.digibox.test:id/btnSignIn
 ##################################################MYBOXXPAGE
 addbutton;xpath;//android.widget.FrameLayout[@content-desc="Add"]/android.widget.FrameLayout/android.widget.ImageView
 uploadfilebutton;id;com.liqvd.digibox.test:id/llUploadFileFolders
@@ -25,5 +26,13 @@ show_roots;xpath;//android.widget.ImageButton[@content-desc="Show roots"]
 createfolderoption;id;com.liqvd.digibox.test:id/llCreateNewFolder
 typefoldername;id;com.liqvd.digibox.test:id/edtCreateFolderName
 createfolderbutton;id;com.liqvd.digibox.test:id/btnCreateFolder
+folderburgericon;id;com.liqvd.digibox.test:id/ivMenu
+changecoloroffolderoptions;id;com.liqvd.digibox.test:id/itemChangeFolderColor
+greencolor;xpath;/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[8]/android.view.View
+renamefolder;id;com.liqvd.digibox.test:id/itemRenameFolder
+renamefolderbox;id;com.liqvd.digibox.test:id/edtReNameFolder
+renamefolderbutton;id;com.liqvd.digibox.test:id/btnReNameFolder
+apply;id;com.liqvd.digibox.test:id/btnApply
+
 #recycle;id;com.liqvd.digibox.test:id/llRecycleBin
 

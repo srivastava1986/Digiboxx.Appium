@@ -16,5 +16,6 @@ public class CreateSubFolderActions extends GetPage {
         element("typefoldername").sendKeys("abc");
         element("createfolderbutton").click();
 
+
     }
 }

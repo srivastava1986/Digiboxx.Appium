@@ -24,17 +24,18 @@ public class UploadMultipleVideosActions extends GetPage {
         element("videos").click();
         element("dcim").click();
 
+        //first variable
         List<WebElement> li=elements("listofvideos");
         int numberofvideos=li.size();
         System.out.println(numberofvideos);
-        //List<WebElement> li2=elements("listofvideos",);
 
-        List<WebElement> li2;
         for(int i=0;i<li.size();i++){
-                    li2=elements("listofvideoswithvariable",Integer.toString(i+1));
-                    li2.get(0).click();
+            //second variable
+            List<WebElement> li2=elements("listofvideoswithvariable",Integer.toString(i+1));
+                    li2.get(0).click(); //driver.findelements(By.Li2[3]).click();
 
         }
+        element("open").click();
 
     }
 }
