@@ -14,11 +14,7 @@ public class UploadSingleImageTest {
         //extenttest=extent.createTest("Upload Single Image Test Case");
         //test=new ResessionTestSessionInitiator();
         test=new TestSessionInitiator();
-
-
     }
-
-
 
     @Test
     public void step01_LaunchApplication_and_skip_presentation(){

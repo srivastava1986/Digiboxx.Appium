@@ -9,7 +9,15 @@ public class ChangeColorOfFolderActions extends GetPage {
         }
 
         public void change_color_of_folder() {
-               // element(""
+                element("addbutton").click();
+                element("createfolderoption").click();
+                element("typefoldername").sendKeys("xyz");
+                element("createfolderbutton").click();
+                element("folderkebab").click();
+                element("changecoloroffolderoptions").click();
+                element("greencolor").click();
+                element("apply").click();
+
 
 
         }

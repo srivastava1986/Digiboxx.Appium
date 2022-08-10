@@ -1,9 +1,7 @@
 package com.utilities;
-
-
-
 import java.io.*;
 
+//Text File Reader "reads the text file" where the locators are mentioned
 public class textFileReader {
 
  public textFileReader(){
@@ -26,7 +24,7 @@ public class textFileReader {
      Boolean settrue=false;
      while ((st=in.readLine())!=null){
          //System.out.println(st);
-         s = st.split(":");
+         s = st.split(";");
          //System.out.println(s[0]);
          if(s[0].toLowerCase().matches(elementname)){
              //System.out.println(s[1]);

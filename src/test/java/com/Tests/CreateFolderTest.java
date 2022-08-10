@@ -32,5 +32,11 @@ public class CreateFolderTest {
     public void step04_createfolder() {
         test.createfolder.create_folder();
     }
+
+    @Test(dependsOnMethods = "step04_createfolder")
+    public void step05_delete_from_checkbox_selection(){
+        test.deleteFromCheckboxSelection.delete_from_checkbox_selection();
+    }
+
 }
 

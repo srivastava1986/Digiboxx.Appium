@@ -39,6 +39,9 @@ public class DriverFactory {
         caps.setCapability("autoGrantPermissions",true);
         caps.setCapability(MobileCapabilityType.APP,app);
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
+        caps.setCapability("noRest",true);
+        //caps.setCapability("–session-override",true);
+        //caps.setCapability("skipServerInstallation",true );
         //for any test on browser app the chromedrive set property and browser caps
 
         return new AndroidDriver(new URL(server),caps);

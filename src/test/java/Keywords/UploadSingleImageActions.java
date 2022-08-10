@@ -9,20 +9,18 @@ import java.util.concurrent.TimeUnit;
 
         public UploadSingleImageActions(AndroidDriver driver) {
         super(driver, "UploadSingleImageTest");
-        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
     }
 
          public void upload_single_image_file() {
-             System.out.println("hello");
-        element("addbutton").click();
-        element("uploadfilebutton").click();
-//        element("images").click();
-//        element("dcim").click();
-//        String s = element("selectimage1").getText();
-//        if (s.equalsIgnoreCase("StatueofLiberty.jpg")) {
-//            element("selectimage1").click();
-//        }
-        //element("selectimage1").click();
+//           System.out.println("hello");
+             element("addbutton").click();
+             element("uploadfilebutton").click();
+             element("show_roots").click();
+             element("images").click();
+             element("dcim").click();
+             element("selectimage1").click();
+             element("open").click();
     }
 }
 

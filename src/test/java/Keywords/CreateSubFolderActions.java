@@ -13,7 +13,12 @@ public class CreateSubFolderActions extends GetPage {
     public void create_subfolder() {
         element("addbutton").click();
         element("createfolderoption").click();
-        element("typefoldername").sendKeys("abc");
+        element("typefoldername").sendKeys("pqr");
+        element("createfolderbutton").click();
+        element("clickonfolder").click();
+        element("addbutton").click();
+        element("createfolderoption").click();
+        element("typefoldername").sendKeys("test");
         element("createfolderbutton").click();
 
 

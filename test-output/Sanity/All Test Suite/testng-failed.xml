@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="C:/Digiboxx.Appium(failed)">
+    <classes>
+      <class name="com.Tests.ChangeColorOfFolderTest">
+        <methods>
+          <include name="startsession"/>
+          <include name="step04_change_color_of_folder"/>
+          <include name="step02_Click_Continue"/>
+          <include name="step03_enter_your_credentials"/>
+          <include name="step01_LaunchApplication_and_skip_presentation"/>
+        </methods>
+      </class> <!-- com.Tests.ChangeColorOfFolderTest -->
+      <class name="com.Tests.UploadSingleVideoTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="step01_LaunchApplication_and_skip_presentation"/>
+          <include name="step03_enter_your_credentials"/>
+          <include name="getResults"/>
+          <include name="startsession"/>
+          <include name="step02_Click_Continue"/>
+          <include name="step04_uploadingSingleVideo"/>
+          <include name="ExtentInitiator"/>
+        </methods>
+      </class> <!-- com.Tests.UploadSingleVideoTest -->
+      <class name="com.Tests.CreateFolderTest">
+        <methods>
+          <include name="step04_createfolder"/>
+          <include name="step03_enter_your_credentials"/>
+          <include name="step05_delete_from_checkbox_selection"/>
+          <include name="startsession"/>
+          <include name="step02_Click_Continue"/>
+          <include name="step01_LaunchApplication_and_skip_presentation"/>
+        </methods>
+      </class> <!-- com.Tests.CreateFolderTest -->
+    </classes>
+  </test> <!-- C:/Digiboxx.Appium(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

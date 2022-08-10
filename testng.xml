@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Digiboxx.Appium">
+        <classes>
+            <class name="com.Tests.ChangeColorOfFolderTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_change_color_of_folder"/>
+                </methods>
+            </class>
+            <class name="com.Tests.CreateFolderTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_createfolder"/>
+                    <include name="step05_delete_from_checkbox_selection"/>
+                </methods>
+            </class>
+            <class name="com.Tests.CreateSubFolderTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_create_subfolder"/>
+                </methods>
+            </class>
+            <class name="com.Tests.DeleteFromCheckboxSelectionTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_create_subfolder"/>
+                    <include name="step05_delete_from_checkbox_selection"/>
+                </methods>
+            </class>
+            <class name="com.Tests.DigiBoxLoginPage">
+                <methods>
+                    <include name="open_the_App"/>
+                    <include name="enter_login_credentials"/>
+                    <include name="upload_single_image"/>
+                    <include name="upload_multiple_images"/>
+                    <include name="upload_multiple_videos"/>
+                    <include name="create_folder"/>
+                    <include name="upload_file_folder"/>
+                    <include name="multiple_uploads_folder"/>
+                    <include name="apply_filter"/>
+                    <include name="folder_color_rename"/>
+                    <include name="delete_folder"/>
+                    <include name="create_subfolder"/>
+                    <include name="selectall_checkbox"/>
+                    <include name="profile_picture"/>
+                    <include name="delete_file"/>
+                    <include name="restore_file"/>
+                    <include name="add_to_favorite"/>
+                    <include name="change_password"/>
+                    <include name="post_comments"/>
+                    <include name="file_preview"/>
+                </methods>
+            </class>
+            <class name="com.Tests.LoginPageTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                </methods>
+            </class>
+            <class name="com.Tests.MyBoxxPageTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_enter_your_credentials"/>
+                    <include name="step03_Upload_Single_image_file"/>
+                    <include name="step04_check_addbutton_is_enabled_in_myboxxPage"/>
+                    <include name="step05_check_addbutton_isdisabled_when_notin_myboxxPage"/>
+                </methods>
+            </class>
+            <class name="com.Tests.RenameFolderTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_renameFolder"/>
+                </methods>
+            </class>
+            <class name="com.Tests.SelectAllCheckboxTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_uploadingMultipleImages"/>
+                    <include name="step05_select_all_checkbox"/>
+                </methods>
+            </class>
+            <class name="com.Tests.SubFolderUploadImageTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_create_subfolder"/>
+                    <include name="step05_upload_image_in_sub_folder"/>
+                </methods>
+            </class>
+            <class name="com.Tests.SubFolderUploadVideoTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_create_subfolder"/>
+                    <include name="step05_upload_video_in_sub_folder"/>
+                </methods>
+            </class>
+            <class name="com.Tests.UploadMultipleImagesTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_uploadingMultipleImages"/>
+                </methods>
+            </class>
+            <class name="com.Tests.UploadMultipleVideosTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_uploadingMultipleVideos"/>
+                </methods>
+            </class>
+            <class name="com.Tests.UploadSingleImageTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_uploadingSingleImage"/>
+                </methods>
+            </class>
+            <class name="com.Tests.UploadSingleVideoTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_uploadingSingleVideo"/>
+                </methods>
+            </class>
+            <class name="com.Tests.UploadingGIFTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_upload_gif_file"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

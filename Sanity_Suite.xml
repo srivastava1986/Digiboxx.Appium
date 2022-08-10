@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Digiboxx.Appium">
+        <classes>
+            <class name="com.Tests.LoginPageTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                </methods>
+            </class>
+            <class name="com.Tests.UploadSingleImageTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_uploadingSingleImage"/>
+                </methods>
+            </class>
+            <class name="com.Tests.UploadSingleVideoTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_uploadingSingleVideo"/>
+                </methods>
+            </class>
+
+
+            <class name="com.Tests.CreateFolderTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_createfolder"/>
+                    <include name="step05_delete_from_checkbox_selection"/>
+                </methods>
+            </class>
+            <class name="com.Tests.ChangeColorOfFolderTest">
+                <methods>
+                    <include name="step01_LaunchApplication_and_skip_presentation"/>
+                    <include name="step02_Click_Continue"/>
+                    <include name="step03_enter_your_credentials"/>
+                    <include name="step04_change_color_of_folder"/>
+                </methods>
+            </class>
+
+
+
+
+
+        </classes>
+    </test>
+</suite>

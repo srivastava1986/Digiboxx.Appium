@@ -14,9 +14,12 @@ import java.util.concurrent.TimeUnit;
         public void upload_single_video_file() {
             element("addbutton").click();
             element("uploadfilebutton").click();
-            element("kebab").click();
+            element("show_roots").click();
+            element("videos").click();
             element("dcim").click();
-            element("video1").click();
+            element("selectvideo1").click();
+            element("open").click();
+
 
         }
     }

@@ -11,11 +11,10 @@ signinbutton;id;com.liqvd.digibox.test:id/btnSignIn
 addbutton;xpath;//android.widget.FrameLayout[@content-desc="Add"]/android.widget.FrameLayout/android.widget.ImageView
 uploadfilebutton;id;com.liqvd.digibox.test:id/llUploadFileFolders
 images;xpath;/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.TextView
-#dcim;xpath;/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout/android.widget.LinearLayout
-
 selectimage1;xpath;/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.RelativeLayout/android.widget.ImageView
 selectimage2;xpath;/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.ImageView
-videos;xpath;/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.FrameLayout/android.widget.ImageView[2]
+
+videos;xpath;/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.FrameLayout/android.widget.ImageView[1]
 dcim;id;android:id/title
 listofvideos;xpath;/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout
 listofvideoswithvariable;xpath;/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[#]/android.widget.RelativeLayout/android.widget.ImageView
@@ -26,13 +25,25 @@ show_roots;xpath;//android.widget.ImageButton[@content-desc="Show roots"]
 createfolderoption;id;com.liqvd.digibox.test:id/llCreateNewFolder
 typefoldername;id;com.liqvd.digibox.test:id/edtCreateFolderName
 createfolderbutton;id;com.liqvd.digibox.test:id/btnCreateFolder
+folderkebab;xpath;(//android.widget.ImageView[@content-desc="kabab menu"])[1]
 folderburgericon;id;com.liqvd.digibox.test:id/ivMenu
+renameoption;id;com.liqvd.digibox.test:id/textView11
 changecoloroffolderoptions;id;com.liqvd.digibox.test:id/itemChangeFolderColor
 greencolor;xpath;/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[8]/android.view.View
-renamefolder;id;com.liqvd.digibox.test:id/itemRenameFolder
 renamefolderbox;id;com.liqvd.digibox.test:id/edtReNameFolder
 renamefolderbutton;id;com.liqvd.digibox.test:id/btnReNameFolder
 apply;id;com.liqvd.digibox.test:id/btnApply
+selectgifimage;xpath;/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.support.v4.widget.DrawerLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[3]/android.widget.FrameLayout/android.widget.ImageView[1]
+clickonfolder;xpath;/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/androidx.cardview.widget.CardView[2]/android.view.ViewGroup/android.widget.TextView[1]
+subfoldername;id;com.liqvd.digibox.test:id/tvName
+homeicon;id;com.liqvd.digibox.test:id/home
+foldercheckbox;id;com.liqvd.digibox.test:id/checkBox2
+deleteicon;id;com.liqvd.digibox.test:id/ivDelete
+deletebutton;id;com.liqvd.digibox.test:id/btnDelete
+selectallcheckbox;id;com.liqvd.digibox.test:id/ivSelectAll
+checkbox3;xpath;/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/androidx.cardview.widget.CardView[2]/android.view.ViewGroup/android.widget.CheckBox
+checkbox2;xpath;/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/androidx.cardview.widget.CardView[2]/android.view.ViewGroup/android.widget.CheckBox
+
 
 #recycle;id;com.liqvd.digibox.test:id/llRecycleBin
 
