@@ -1,6 +1,7 @@
 package Keywords;
 
 import com.PageObjects.GetPage;
+
 import io.appium.java_client.android.AndroidDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -26,4 +27,22 @@ public class LoginPageActions extends GetPage {
         element("password").sendKeys("Gaurav@123");
         element("signinbutton").click();
     }
+
+    public Boolean validateDashboardTitle(){
+        String expected;
+        String actual;
+        Boolean b = null;
+
+        expected="MyBoxx";
+        actual=element("Myboxxtitle").getText();
+
+        if(actual.equalsIgnoreCase(expected)){
+            b=true;
+        }else {
+            b=false;
+        }
+
+        return b;
+    }
+
 }

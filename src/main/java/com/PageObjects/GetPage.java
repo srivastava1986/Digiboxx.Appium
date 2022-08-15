@@ -3,7 +3,6 @@ package com.PageObjects;
 import com.utilities.textFileReader;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,9 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
-import static com.utilities.textFileReader.locatorfinder;
 
-//Get Page defines all the "Page related methods" like driver.findElement and Locators.
+//Get Page defines all the "Page related methods" like driver.findElement and LocatorsEnum.
 public class GetPage extends BaseUi {
 
     protected AndroidDriver driver;
@@ -30,8 +28,12 @@ public class GetPage extends BaseUi {
 //    }
 
     public  WebElement element(String elementname)  {
-        String[] locators= new String[0];
+        //initializing
+        String[] locators;
         WebElement webelement = null;
+
+
+
         try {
             locators = textFileReader.locatorfinder(elementname);
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -91,10 +93,6 @@ public class GetPage extends BaseUi {
 
             s3=s1+variables+s2;
 
-
-
-
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -106,8 +104,7 @@ public class GetPage extends BaseUi {
 
 
     private static By getLocator(String locatorType, String locatorvalue) {
-
-        switch (Locators.valueOf(locatorType)){
+        switch (LocatorsEnum.valueOf(locatorType)){
             case id:
                 return By.id(locatorvalue);
             case xpath:
@@ -123,5 +120,9 @@ public class GetPage extends BaseUi {
             default:
                 return By.id(locatorvalue);
         }
+    }
+
+    public void test1(String s2){
+        System.out.println("getpage");
     }
 }

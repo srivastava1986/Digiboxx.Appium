@@ -4,15 +4,14 @@ import Keywords.*;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import io.appium.java_client.android.AndroidDriver;
-
-
 import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.Map;
 
 import static com.utilities.configfileReader.getConfigData;
 
-//Test Session Initiator defines "it initiates the session" and "loads all page objects which are used in the Test Cases".
+//Test Session Initiator defines "it initiates the session" and "loads all page objects
+// which are used in the Test Cases".
 public class TestSessionInitiator {
 
     AndroidDriver driver;
@@ -34,12 +33,16 @@ public class TestSessionInitiator {
     public SubFolderUploadVideoActions uploadVideoInSubFolder;
     public DeleteFromCheckboxSelectionActions deleteFromCheckboxSelection;
     public SelectAllCheckboxActions selectAllCheckbox;
-
-
+    public DeleteFromRecycleBinActions deleteFromRecycleBin;
+    public ApplyFilterActions applyFilter;
+    public RemoveFilterActions removeFilter;
+    public SelectMultipleFilesUsingCheckboxActions selectMultipleFilesUsingCheckbox;
+    public RestoreFilesFromRecycleBinActions restoreFilesFromRecycleBin;
+    public DeleteFromKebabIconActions deleteFromKebabIcon;
+    public DeleteFromPreviewPageActions deleteFromPreviewPage;
 
 
     public MutipleVideosActions multiplevideos;
-
 
     private void  initPage(){
 
@@ -60,6 +63,14 @@ public class TestSessionInitiator {
         uploadVideoInSubFolder=new SubFolderUploadVideoActions(driver);
         deleteFromCheckboxSelection = new DeleteFromCheckboxSelectionActions(driver);
         selectAllCheckbox = new SelectAllCheckboxActions(driver);
+        deleteFromRecycleBin=new DeleteFromRecycleBinActions(driver);
+        applyFilter=new ApplyFilterActions(driver);
+        removeFilter= new RemoveFilterActions(driver);
+        selectMultipleFilesUsingCheckbox=new SelectMultipleFilesUsingCheckboxActions(driver);
+        restoreFilesFromRecycleBin= new RestoreFilesFromRecycleBinActions(driver);
+        deleteFromKebabIcon = new DeleteFromKebabIconActions(driver);
+        deleteFromPreviewPage=new DeleteFromPreviewPageActions(driver);
+
 
 
     }
@@ -70,8 +81,6 @@ public class TestSessionInitiator {
         initPage();
     }
 
-
-
     private void configureAndriodDriver() {
         try {
 
@@ -80,8 +89,6 @@ public class TestSessionInitiator {
             e.printStackTrace();
         }
     }
-
-
 
     private Map<String, String> getSessionConfig(){
          String[] configkeys={"platform","app","appiumserver"};
@@ -92,7 +99,5 @@ public class TestSessionInitiator {
          }
          return config;
     }
-
-
 
 }

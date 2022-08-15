@@ -1,5 +1,6 @@
 package com.TestSessionInitiator;
 
+
 import com.utilities.configfileReader;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -16,7 +17,8 @@ public class DriverFactory {
     static configfileReader reader=new configfileReader();
 
 
-
+    //Map is an interface, used for when you want to associate a key with a value
+    //here i m taking key & value from Config.properties
     public static AndroidDriver getDriver(Map<String,String> config) throws MalformedURLException {
 
         if(config.get("platform").toLowerCase().toString().equalsIgnoreCase("mobile")){

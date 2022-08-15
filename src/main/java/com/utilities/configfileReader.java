@@ -18,6 +18,7 @@ public class configfileReader {
     public static String getConfigData(String key){
         String value="";
         try {
+            //FileInputStream class is useful to read data from a file                                       in the form of sequence of bytes.
             FileInputStream input = new FileInputStream("./config.properties");
             Properties prop = new Properties();
             prop.load(input);

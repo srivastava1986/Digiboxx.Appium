@@ -15,6 +15,13 @@ public class textFileReader {
 //
 //    }
 
+    //different ways to read text file
+    //Using BufferedReader class
+    //Using Scanner class
+    //Using File Reader class
+    //Reading the whole file in a List
+    //Read a text file as String
+
  public static String[] locatorfinder(String elementname) throws IOException {
      String s[] = new String[0];
      String projectpath = System.getProperty("user.dir");

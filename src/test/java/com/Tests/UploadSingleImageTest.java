@@ -33,7 +33,6 @@ public class UploadSingleImageTest {
     }
 
     @Test(dependsOnMethods = "step03_enter_your_credentials")
-    //@Test
     public void step04_uploadingSingleImage() {
         //extenttest=extent.createTest(getClass().getSimpleName());
         test.uploadSingleImage.upload_single_image_file();
