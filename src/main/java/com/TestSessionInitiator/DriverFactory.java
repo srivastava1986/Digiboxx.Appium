@@ -7,8 +7,10 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.Files;
 import java.util.Map;
 
 public class DriverFactory {
@@ -23,8 +25,8 @@ public class DriverFactory {
 
         if(config.get("platform").toLowerCase().toString().equalsIgnoreCase("mobile")){
 
-            System.out.println(config.get("app"));
-            return getAndriodDriver(config.get("app"),config.get("appiumserver"));
+            System.out.println(System.getProperty("user.dir")+ File.separator+config.get("app"));//C:\Digiboxx.Appium\app-411-WIPTest-debug.apk
+            return getAndriodDriver(System.getProperty("user.dir")+ File.separator+config.get("app"),config.get("appiumserver"));
 
         }
 
