@@ -40,6 +40,10 @@ public class TestSessionInitiator {
     public RestoreFilesFromRecycleBinActions restoreFilesFromRecycleBin;
     public DeleteFromKebabIconActions deleteFromKebabIcon;
     public DeleteFromPreviewPageActions deleteFromPreviewPage;
+    public UpdateProfilePictureActions updateProfilePicture;
+    public ChangeProfilePictureActions changeProfilePicture;
+    public DeleteProfilePictureActions deleteProfilePicture;
+
 
 
     public MutipleVideosActions multiplevideos;
@@ -70,9 +74,9 @@ public class TestSessionInitiator {
         restoreFilesFromRecycleBin= new RestoreFilesFromRecycleBinActions(driver);
         deleteFromKebabIcon = new DeleteFromKebabIconActions(driver);
         deleteFromPreviewPage=new DeleteFromPreviewPageActions(driver);
-
-
-
+        updateProfilePicture=new UpdateProfilePictureActions(driver);
+        changeProfilePicture=new ChangeProfilePictureActions(driver);
+        deleteProfilePicture=new DeleteProfilePictureActions(driver);
     }
     public TestSessionInitiator(){
 
