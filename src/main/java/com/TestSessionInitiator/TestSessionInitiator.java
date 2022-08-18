@@ -1,8 +1,6 @@
 package com.TestSessionInitiator;
 
 import Keywords.*;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import io.appium.java_client.android.AndroidDriver;
 import java.net.MalformedURLException;
 import java.util.HashMap;
@@ -43,8 +41,18 @@ public class TestSessionInitiator {
     public UpdateProfilePictureActions updateProfilePicture;
     public ChangeProfilePictureActions changeProfilePicture;
     public DeleteProfilePictureActions deleteProfilePicture;
-
-
+    public RestoreByCheckboxSelectionActions restoreByCheckboxSelection;
+    public ProfilePictureCameraUploadActions profilePictureCameraUpload;
+    public ChangePasswordActions changePassword;
+    public AddToStarredFilesAndFoldersActions addToStarredFilesAndFolders;
+    public CheckAddButtonEnabledinMyBoxxActions checkAddButtonEnabledInMyBoxx;
+    public CheckAddButtonDisabledInQuickAccessActions checkAddButtonDisabledInQuickAccess;
+    public CheckAddButtonDisabledInRecycleBinActions checkAddButtonDisabledInRecycleBin;
+    public CheckAddButtonDisabledInStarredActions checkAddButtonDisabledInStarred;
+    public CheckAddButtonDisabledInSharedActions checkAddButtonDisabledInShared;
+    public PostCommentsTextOnlyActions postCommentsTextOnly;
+    public PostCommentsAttachFilesWithCommentActions postCommentsAttachFilesWithComment;
+    public ShareFileInStarredTabActions shareFileInStarredTabTest;
 
     public MutipleVideosActions multiplevideos;
 
@@ -77,6 +85,18 @@ public class TestSessionInitiator {
         updateProfilePicture=new UpdateProfilePictureActions(driver);
         changeProfilePicture=new ChangeProfilePictureActions(driver);
         deleteProfilePicture=new DeleteProfilePictureActions(driver);
+        restoreByCheckboxSelection=new RestoreByCheckboxSelectionActions(driver);
+        profilePictureCameraUpload=new ProfilePictureCameraUploadActions(driver);
+        changePassword=new ChangePasswordActions(driver);
+        addToStarredFilesAndFolders=new AddToStarredFilesAndFoldersActions(driver);
+        checkAddButtonEnabledInMyBoxx=new CheckAddButtonEnabledinMyBoxxActions(driver);
+        checkAddButtonDisabledInQuickAccess= new CheckAddButtonDisabledInQuickAccessActions(driver);
+        checkAddButtonDisabledInRecycleBin=new CheckAddButtonDisabledInRecycleBinActions(driver);
+        checkAddButtonDisabledInStarred=new CheckAddButtonDisabledInStarredActions(driver);
+        checkAddButtonDisabledInShared=new CheckAddButtonDisabledInSharedActions(driver);
+        postCommentsTextOnly=new PostCommentsTextOnlyActions(driver);
+        postCommentsAttachFilesWithComment=new PostCommentsAttachFilesWithCommentActions(driver);
+        shareFileInStarredTabTest=new ShareFileInStarredTabActions(driver);
     }
     public TestSessionInitiator(){
 
